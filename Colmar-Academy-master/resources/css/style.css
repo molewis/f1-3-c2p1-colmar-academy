@@ -1,0 +1,559 @@
+@font-face {
+  font-family: "Questrial";
+  src: url("../fonts/Questrial-Alegreya/Questrial/Questrial-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Alegreya";
+  src: url("../fonts/Questrial-Alegreya/Alegreya/Alegreya-BoldItalic.ttf");
+  font-weight: bold;
+  font-style: italic, oblique;
+}
+
+@font-face {
+  font-family: "Alegreya";
+  src: url("../fonts/Questrial-Alegreya/Alegreya/Alegreya-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Alegreya";
+  src: url("../fonts/Questrial-Alegreya/Alegreya/Alegreya-Italic.ttf");
+  font-style: italic, oblique;
+}
+
+@font-face {
+  font-family: "Alegreya";
+  src: url("../fonts/Questrial-Alegreya/Alegreya/Alegreya-Regular.ttf");
+}
+
+@font-face {
+  font-family: "AlegreyaBlack";
+  src: url("../fonts/Questrial-Alegreya/Alegreya/Alegreya-BlackItalic.ttf");
+  font-style: italic, oblique;
+}
+
+@font-face {
+  font-family: "AlegreyaBlack";
+  src: url("../fonts/Questrial-Alegreya/Alegreya/Alegreya-Black.ttf");
+}
+
+.alegreya {
+  font-family: "Alegreya"
+}
+
+.alegreya-black {
+  font-family: "AlegreyaBlack"
+}
+
+.questrial {
+  font-family: "Questrial"
+}
+
+html {
+  font-family: 'Alegreya', Serif;
+  font-size: 19px;
+}
+
+
+p.logo,
+nav,
+.information .main,
+.information .desktop,
+.course div img,
+.course div p,
+.thesis .main h3,
+.thesis .main q,
+#container aside,
+footer a {
+  display: none;
+}
+
+.outline {
+  display: none;
+}
+
+body {
+  background-color: #277552;
+}
+
+
+/* Header */
+
+header {
+  background-color: #004124;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 6rem;
+}
+
+header img {
+  height: 4rem;
+
+}
+
+
+/* Banner */
+
+.banner {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #84AA99;
+}
+.banner h1 {
+  color: #0A5B36;
+  font-size: 4rem;
+  font-family: "Questrial";
+  text-align: center;
+  margin: 1rem;
+}
+.banner div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.banner div h3,
+.banner div p {
+  padding: 2rem;
+  margin: 0;
+}
+
+.banner img {
+  width: 60%;
+  padding: 32px 40px 32px 24px;
+}
+
+.banner div h3 {
+  font-size: 3rem;
+  color: #00E8AA;
+  text-align: left;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.banner div p {
+  font-size: 2rem;
+  text-align: center;
+  font-style: italic;
+}
+
+.banner div button {
+  border-radius: 10px;
+  border: 5px solid transparent;
+  background-color: #0A5B36;
+  color: white;
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  transition: background-color 2s linear;
+  transition: color 2s linear;
+  cursor: pointer;
+  font-size: 2.5rem;
+}
+
+.banner div button:hover {
+  background-color: white;
+  color: #004124;
+}
+
+.banner div button:active {
+  background-color: #004124;
+}
+
+
+/* Information */
+
+.information {
+  display: flex;
+  justify-content: center;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  width: 80%;
+  justify-content: center;
+}
+
+aside div {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+aside div img {
+  width: 100%;
+}
+
+.content h3 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.content p {
+  color: black;
+  font-size: 2rem;
+  font-style: italic;
+  margin: 1rem 0;
+}
+
+.information.content a {
+  color: #004124;
+  text-decoration: none;
+  font-size: 2rem;
+  font-family: Helvetica, sans-serif;
+}
+
+
+/* Courses */
+
+.course {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #84AA99;
+}
+
+.course h2 {
+  color: #0A5B36;
+  font-family: "Questrial";
+  font-size: 4rem;
+  text-align: center;
+  margin: 2rem;
+  margin-bottom: 0;
+}
+
+#flxcntnr div {
+  background-color: #0A5B36;
+  width: 80%;
+  margin: 1rem auto;
+}
+
+#flxcntnr div h3 {
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+
+/* Thesis */
+
+#container h2 {
+  color: #004124;
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+
+.thesis .main video {
+  width: 100%;
+}
+
+
+/* Footer */
+
+footer span {
+  background-color: #004124;
+  width: 100%;
+  color: #84AA99;
+  display: inline-block;
+  font-size: 1rem;
+  font-family: "Alegreya";
+  text-align: left;
+  margin-top: 3rem;
+  margin-bottom: 0;
+  padding: 3rem 0;
+  padding-left: 3rem;
+}
+
+
+
+/* Desktop */
+
+@media only screen and (min-width: 1024px) {
+  p.logo,
+  header a,
+  .information .main,
+  .information .desktop,
+  .course div img,
+  .course div p,
+  .thesis .main h3,
+  .thesis .main q,
+  #container aside,
+  footer a {
+    display: initial;
+  }
+
+
+
+  /* Header */
+  header {
+
+    justify-content: flex-end;
+  }
+  header nav {
+
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    width: 60%;
+  }
+  header img {
+    display: none;
+
+  }
+  img.logo {
+    display: initial;
+    height: 5rem;
+    margin: 0;
+    padding: 0;
+  }
+  p.logo,
+  header nav a {
+    font-size: 2rem;
+    text-decoration: none;
+    color: #84AA99;
+  }
+  strong {
+    font-weight: bold;
+  }
+  header nav a {
+    transition: color 0.75s linear;
+    font-size: 1rem;
+    padding: 16px;
+  }
+  header nav a:hover {
+    color: black;
+  }
+  p.logo {
+    font-size: 1.5rem;
+    margin-right: auto;
+  }
+
+
+
+  /* Banner */
+  .banner {
+    flex-direction: row;
+    margin-bottom: 32px;
+    background-color: #84AA99;
+  }
+  .banner h1 {
+    h1 {
+      font-family: "Questrial"
+      font-weight: bold;
+    }
+  }
+
+  .banner div button {
+    font-size: 2rem;
+    margin: 1rem;
+  }
+  .banner img {
+    width: 40%;
+  }
+
+
+
+  /* Information */
+  .information {
+    width: 100%;
+  }
+  img.mobile {
+    display: none;
+  }
+  .information .main {
+    width: 45%;
+    margin-right: 2.5%;
+  }
+
+  .information .main h3 {
+    font-size: 3rem;
+    font-family: "Questrial";
+    color: #004124;
+    padding: 1rem;
+    margin:  0 1.5rem;
+  }
+
+  .information .main blockquote {
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+  .quotee {
+    font-size: 1rem;
+    float: right;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    padding-right: 59px;
+  }
+  .information .main img {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .information aside {
+    width: 50%;
+  }
+
+
+
+  /* Aside */
+  aside {
+    display: flex;
+    align-items: space-between;
+  }
+  aside div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #509073;
+  }
+  .content {
+    display: initial;
+    margin-left: 1rem;
+    background-color: transparent;
+  }
+  .content h3 {
+    font-size: 2rem;
+  }
+  .content p {
+    font-size: 1.3rem;
+    padding-right: 1rem;
+  }
+  .information.content a {
+    font-size: 1rem;
+  }
+  aside div img {
+    width: 30%;
+    height: 30%;
+    margin: 1.5rem;
+  }
+
+
+
+  /* Courses */
+  .course {
+    background-color: #84AA99;
+    display: flex;
+    justify-content: center;
+  }
+  .course div {
+    width: auto;
+  }
+  .course div img {
+    width: 100%;
+  }
+  #flxcntnr {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 1rem;
+  }
+  #flxcntnr div {
+    width: 20rem;
+  }
+  #flxcntnr div p {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 1rem;
+    display: block;
+  }
+
+
+
+  /* Thesis */
+  #flexcontainer {
+    display: flex;
+    width: 100%;
+  }
+  #flexcontainer aside {
+    width: 50%;
+  }
+  .thesis {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+  }
+  .thesis .main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .thesis .main video {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .thesis .main h3 {
+    font-size: 3rem;
+    color: #004124;
+    padding: 1rem;
+    margin: 1rem;
+    margin-bottom: 0;
+  }
+  .thesis .main q {
+    padding: 1rem;
+    font-size: 1.5rem;
+  }
+
+
+
+  /* Footer */
+  footer {
+    background-color: #004124;
+    color:  #84AA99;
+    display: flex;
+    align-content: center;
+  }
+  footer span {
+    background-color: #004124;
+    color:  #84AA99;
+    margin-right: auto;
+    margin-top: 0;
+
+  }
+  footer a {
+    background-color: #004124;
+    text-decoration: none;
+    font-size: 1rem;
+    color:  #84AA99;
+    font-family: "Alegreya";
+    transition: color 0.75s linear;
+    padding: 3rem;
+
+  }
+  footer a:hover {
+    color: black;
+  }
+}
+/*
+/* Tablet/Phone
+@media only screen and (max-width: 920px) {
+.banner {
+display: flex;
+flex-direction: column;
+}
+}
+
+/*
+html {
+Font-Family: 'Questrial', Sans-Serif;
+Font-Size: 40px;
+Font-Family: 'Alegreya', Serif;
+Font-Size: 19px;
+}
+*/
